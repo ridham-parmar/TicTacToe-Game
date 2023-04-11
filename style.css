@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/assets/gradient-bg.jpg);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+p {
+    color:white;
+    /* position:absolute; */
+    /* top:3rem;
+    left:50%;
+    transform:translateX(-50%); */
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.5rem 3rem;
+}
+
+.grid {
+    width:90%;
+    max-width:20rem;
+    padding: 2rem;
+    aspect-ratio: 1/1;
+    color:white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+    width: 100%;
+    aspect-ratio: 1/1;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box0, .box1, .box3, .box4 {
+    border-right:2px solid white;
+    border-bottom:2px solid white;
+}
+
+.box2, .box5 {
+    border-bottom:2px solid white;
+}
+
+.box6, .box7 {
+    border-right:2px solid white;
+}
+
+button {
+    /* all: unset; */
+    color:white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.active {
+    display: flex;
+}
+.inactive {
+    display: none;
+}
+
+.win{
+   background-color: rgba(0, 255, 0, 0.3);
+}
